@@ -4,7 +4,7 @@ def removeChar(string, idx):
 
 def keyGen():
     import random
-    alphabet = "abcdefghijklmnopqrstuvwxyz"
+    alphabet = "abcdefghijklmnopqrstuvwxyz "
     key = ""
     for i in range(len(alphabet) - 1, -1, -1):
         idx = random.randint(0, i)
@@ -30,7 +30,7 @@ def removeMatches(myString, removeString):
 
 
 def genKeyFromPass(password):
-    alphabet = 'abcdefghijklmnopqrstuvwxyz'
+    alphabet = 'abcdefghijklmnopqrstuvwxyz '
     password = password.lower()
     password = removeDupes(password)
     lastChar = password[-1]
