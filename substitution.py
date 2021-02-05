@@ -9,7 +9,6 @@ def keyGen():
     for i in range(len(alphabet) - 1, -1, -1):
         idx = random.randint(0, i)
         key = key + alphabet[idx]
-        print(key)
         alphabet = removeChar(alphabet, idx)
     return key
 
