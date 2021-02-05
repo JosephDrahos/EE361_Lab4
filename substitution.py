@@ -41,7 +41,8 @@ def genKeyFromPass(password):
     key = password + afterString + beforeString
     return key
 
-def substitutionEncrypt(plainText,key):
+
+def substitutionEncrypt(plainText, key):
     alphabet = "abcdefghijklmnopqrstuvwxyz "
     plainText = plainText.lower()
     cipherText = ""
@@ -50,7 +51,8 @@ def substitutionEncrypt(plainText,key):
         cipherText = cipherText + key[idx]
     return cipherText
 
-def substitutionDecrypt(cipherText,key):
+
+def substitutionDecrypt(cipherText, key):
     alphabet = "abcdefghijklmnopqrstuvwxyz "
     cipherText = cipherText.lower()
     plainText = ""
