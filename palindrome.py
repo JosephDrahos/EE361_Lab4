@@ -6,7 +6,15 @@
 #       False: if input is not a palindrome; True: if input is #palindrome
 
 def palindromCheck(input):
-    for i in range(int(len(input) / 2)):
-        if input[i] != input[-i - 1]:
+    j = -1
+    i = 0
+    while i < abs(len(input) + j):
+        if not input[i].isalpha():
+            i += 1
+        if not input[j].isalpha():
+            j -= 1
+        if input[i] != input[j]:
             return False
+        j -= 1
+        i += 1
     return True
